@@ -1,4 +1,4 @@
-# Project X
+# Visualization of News Bulletins For UNICEF Crisis Operation Center`
 
 TODO describe project here
 
