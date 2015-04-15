@@ -21,7 +21,7 @@
 		    .attr("width", width + margin.left + margin.right)
 		    .attr("height", height + margin.top + margin.bottom)
 		  .append("g")
-		    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+		    .attr("transform", "translate(" + 500 + margin.left + "," + margin.top + ")");
 
 		d3.csv("data/test2.csv", type, function(error, data) {
 			x.domain(data.map(function(d) { return d.Topics; }));

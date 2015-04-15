@@ -1,22 +1,38 @@
-			.bar {
-			  fill: steelblue;
-			}
+	.bar {
+	  fill: steelblue;
+	}
 
-			.bar:hover {
-			  fill: brown;
-			}
+	.bar:hover {
+	  fill: brown;
+	}
 
-			.axis {
-			  font: 10px sans-serif;
-			}
+	.axis {
+	  font: 10px sans-serif;
+	}
 
-			.axis path,
-			.axis line {
-			  fill: none;
-			  stroke: #000;
-			  shape-rendering: crispEdges;
-			}
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
 
-			.x.axis path {
-			  display: none;
-			}
+	.x.axis path {
+	  /*display: none;*/
+	}
+
+	#slider { 
+		margin: 10px; 
+	}
+
+	.sliderContainer {
+		width: 600px;
+		padding: 20px;
+	}
+
+
+	.line {
+	  fill: none;
+	  stroke: steelblue;
+	  stroke-width: 1.5px;
+	}
