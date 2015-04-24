@@ -25,14 +25,38 @@
 	    .orient("left")
 	    .ticks(10);
 
+
+	var mapContainer = d3.select("body")
+	// .append("svg")
+	// 	.attr("width",1000)
+	// 	.attr("height",1000)
+	.append("object")
+		.attr("type","image/svg+xml")
+		.attr("data","data/Association_of_National_Olympic_Committees.svg")
+
 	var svgContainer = d3.select("body").append("svg")
+		.attr("class","container")
 		.attr("width",  700 + width + margin.left + margin.right)
 	    .attr("height",  200 + height + margin.top + margin.bottom)
 
-	var world_map = svgContainer.append("g")
-		.attr("transform", "translate(" + 20 + "," + margin.top + ")")
-		.append("text")
-		.text("Map Under Construction");
+	// var world_map = svgContainer.append("g")
+	// 	.attr("transform", "translate(" + 20 + "," + margin.top + ")")
+	// 	.append("text")
+	// 	.text("Map Under Construction");
+
+	// <object type="image/svg+xml" data="data/Association_of_National_Olympic_Committees.svg">Your browser does not support SVG</object>
+
+
+	// var world_map =  svgContainer.append("svg")
+	// 	.attr("width",  1000)
+	// 	.attr("height",  1000)
+	// 	.attr("transform", "translate(" + 20 + "," + margin.top + ")")
+	// .append("object")
+	// 	.attr("type","image/svg+xml")
+	// 	.attr("data","data/Association_of_National_Olympic_Committees.svg")
+	// console.log("lalalalala")
+	
+
 
 		// pot the bars
 	var svg = svgContainer
@@ -69,7 +93,7 @@
 				.data(data)
 				.enter().append("rect")
 				.attr("class","bar")
-				.attr("x",20)
+				.attr("x",2)
 				.attr("width",function(d){return x(d.Count); })
 				.attr("y",function(d){ return y(d.Topics); })
 				.attr("height", y.rangeBand())
