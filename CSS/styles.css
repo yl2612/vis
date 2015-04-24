@@ -36,3 +36,31 @@
 	  stroke: steelblue;
 	  stroke-width: 1.5px;
 	}
+
+	.body {
+		position: relative;
+	}
+
+	#Title {
+		height:50px;
+		padding:10px;
+	}
+
+	#Map {
+		/*height:500px;*/
+		width:650px;
+		float:left;
+		padding:5px;
+	}
+
+	#Bar_plot {
+		width:300px;
+		float:left;
+		padding:10px;
+	}
+
+	#Date_slider {
+		position:relative;
+		top:350px;
+		padding:10px;
+	}
