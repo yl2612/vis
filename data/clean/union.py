@@ -11,5 +11,9 @@ orders = can_Df.columns
 orders = orders[[3,4,1,2,6,0,5]]
 can_Df = can_Df[orders]
 can_Df = can_Df.drop("FileName",axis=1)
+times = can_Df["Date/Time"]
+times = pd.to_datetime(times.values)
+can_Df["Date/Time"] = times
+
 
 can_Df.to_csv("../Cleaned_Dataset.csv")

@@ -1,10 +1,10 @@
 
 // map part
-var map = d3.select("#Map")
-map.append("object")
+// var map = d3.select("#Map")
+// map.append("object")
 
-		.attr("type","image/svg+xml")
-		.attr("data","data/Association_of_National_Olympic_Committees.svg")
+// 		.attr("type","image/svg+xml")
+// 		.attr("data","data/Blank_Map_Pacific_World.svg")
 
 
 // bar plot

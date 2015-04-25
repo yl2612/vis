@@ -48,7 +48,7 @@
 
 	#Map {
 		/*height:500px;*/
-		width:650px;
+		width:800px;
 		float:left;
 		padding:5px;
 	}
@@ -61,6 +61,6 @@
 
 	#Date_slider {
 		position:relative;
-		top:350px;
+		top:580px;
 		padding:10px;
 	}
