@@ -1,5 +1,16 @@
 
 // map part
+
+var basic_choropleth = new Datamap({
+			  element: document.getElementById("Map"),
+			  projection: 'mercator',
+			  fills: {
+			    defaultFill: "#d9d9d9"
+			  },
+			  geographyConfig: {
+			  	highlightFillColor: '#48CAF2'
+			  }
+			});
 // var map = d3.select("#Map")
 // map.append("object")
 

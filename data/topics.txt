@@ -1,0 +1,15 @@
+1: political/social unrest
+
+2: conflict
+
+3: population displacement
+
+4: disaster
+
+5: food insecurity
+
+6: disease
+
+7: water insecurity
+
+8: fund

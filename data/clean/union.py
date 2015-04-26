@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 df1 = pd.read_csv("Lai/lai.csv")
-df2 = pd.read_csv("Lei/data.csv")
+df2 = pd.read_csv("Lei/data_2.csv")
 df3 = pd.read_csv("Xi/Xi.csv")
 df2.columns = ['FileName', 'Date/Time', 'Region', 'Country', 'Title', 'Content','Source']
 df3.columns = ['FileName', 'Region', 'Country', 'Date/Time', 'Title', 'Content','Source']
@@ -16,4 +16,4 @@ times = pd.to_datetime(times.values)
 can_Df["Date/Time"] = times
 
 
-can_Df.to_csv("../Cleaned_Dataset.csv")
+can_Df.to_csv("Cleaned_Dataset.csv")
